@@ -99,6 +99,7 @@ footer{
 #map {
     height: 400px;
     z-index: 0; /* Ajusta el z-index según tus necesidades */
+    overflow: hidden;
 }
 #imagen{
     width: 100px;
@@ -125,6 +126,12 @@ footer{
 }
   .opt_img{
     padding: 2%;
+  }
+
+  .material-symbols-outlined{
+    cursor: pointer;
+    color: #FCA311;
+    font-size: 40px;
   }
 @media (min-width: 600px) {
     header {
