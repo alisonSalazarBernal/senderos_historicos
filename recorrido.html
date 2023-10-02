@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Senderos Historicos</title>
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" id="titulo">
+        <div id="menu"><img src="img/menu.svg"></div>
+    </header>
+    <div id="opciones">
+        <a href="index.html">Inicio</a>
+        <a href="recorrido.html">Recorrido</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="ubicacion.html">Ubicacion</a>
+        <a href="informacion.html">Blog</a>
+    </div>
+    <main>
+        <div class="seccion"><h4 class="text-2xl mt-5 mb-5">Recorrido Historico</h4></div>
+        <div class="grid grid-cols-2 gap-2 items-center">
+            <img src="img/PRESIDENTES.png" alt="">
+            <img src="img/qr1.jpeg" alt="">
+            <img src="img/BENEMERITOS.png" alt="">
+            <img src="img/qr2.jpeg" alt="">
+            <img src="img/MUJERES.png" alt="">
+            <img src="img/qr3.jpeg" alt="">
+            <img src="img/LISTAP.png" alt="">
+            <img src="img/qr4.jpeg" alt="">
+        </div>
+    </main>
+    <footer>
+        <h3>Proyecto universitario</h3>
+    </footer>
+</body>
+<script>
+    var menu = document.getElementById('menu')
+    var opciones = document.getElementById('opciones')
+    menu.onclick = function() {
+        if (opciones.style.display == 'block') {
+            opciones.style.display = 'none'
+        } else {
+            opciones.style.display = 'block'
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Senderos Historicos</title>
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" id="titulo">
+        <div id="menu"><img src="img/menu.svg"></div>
+    </header>
+    <div id="opciones">
+        <a href="index.html">Inicio</a>
+        <div class="flex" id="recorrido">
+            <a href="#">Recorrido</a><img src="/img/row.svg" alt="">
+        </div>
+        <div id="opt_recorrido">
+            <a href="benemeritos.html">Benemeritos</a>
+            <a href="mujeres.html">Mujeres Notables</a>
+            <a href="presidentes.html">Presidentes</a>
+        </div>
+        <a href="galeria.html">Galeria</a>
+        <a href="ubicacion.html">Ubicacion</a>
+        <a href="informacion.html">Blog</a>
+    </div>
+    <main>
+        <iframe width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.05453019071!2d-66.16309132564311!3d-17.409170533481674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e373ebea1b7227%3A0x69129eb5104e6110!2sCementerio%20General%2C%20Avenue%20Bartolome%2C%20Cochabamba!5e0!3m2!1ses!2sbo!4v1695791731938!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <article>
+            <h2 class="text-2xl">Como llegar</h2>
+            <img src="img/run.svg" class="portada">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque ex, velit ad consequuntur expedita voluptate ipsa voluptatibus temporibus eos nihil? Quia repellendus maiores vitae voluptates corporis ipsa reiciendis cupiditate! Amet.</p>
+            <img src="img/car.svg" class="portada">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius modi impedit fuga deleniti sed, corrupti sit nemo molestias molestiae eaque consequuntur quam nostrum magni possimus quos, minus delectus aperiam odio.</p>
+            <br><br>
+            <h2 class="text-2xl">Horarios</h2>
+            <p>El cementerio abre todos los dias de 8:00 am a 15:30 pm</p>
+            <ul>
+                <li>Lunes:Abierto</li>
+                <li>Martes:Abierto</li>
+                <li>Miercoles:Abierto</li>
+                <li>Jueves:Abierto</li>
+                <li>Viernes:Abierto</li>
+                <li>Sabado:Abierto</li>
+            </ul>
+        </article>
+    </main>
+    <footer>
+        <h3>proyecto universitario</h3>
+    </footer>
+</body>
+
+<script>
+    var menu = document.getElementById('menu')
+    var opciones = document.getElementById('opciones')
+    menu.onclick = function() {
+        if (opciones.style.display == 'block') {
+            opciones.style.display = 'none'
+        } else {
+            opciones.style.display = 'block'
+        }
+    }
+    var recorrido = document.getElementById('recorrido')
+    var opt_recorriodo = document.getElementById('opt_recorrido')
+    recorrido.onclick = function(){
+        if (opt_recorriodo.style.display == 'block') {
+            opt_recorriodo.style.display = 'none'
+        } else {
+            opt_recorriodo.style.display = 'block'
+        }
+    }
+</script>
+</html>

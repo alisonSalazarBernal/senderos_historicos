@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Senderos Historicos</title>
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" id="titulo">
+        <div id="menu"><img src="img/menu.svg"></div>
+    </header>
+    <div id="opciones">
+        <a href="index.html">Inicio</a>
+        <div class="flex" id="recorrido">
+            <a href="#">Recorrido</a><img src="/img/row.svg" alt="">
+        </div>
+        <div id="opt_recorrido">
+            <a href="benemeritos.html">Benemeritos</a>
+            <a href="mujeres.html">Mujeres Notables</a>
+            <a href="presidentes.html">Presidentes</a>
+        </div>
+        <a href="galeria.html">Galeria</a>
+        <a href="ubicacion.html">Ubicacion</a>
+        <a href="informacion.html">Blog</a>
+    </div>
+    <main>
+        <a href=""><img src="/img/info.svg" alt=""></a>
+        <img src="/img/360.svg" alt="">
+        <div id="visor-container">
+            <a-scene embedded style="width: 50%; height: 400px;">
+                <a-sky src="img/3.1.jpg" rotation="0 0 0"></a-sky>
+            </a-scene>
+        </div>
+    </main>
+    <footer>
+        <h3>Proyecto universitario</h3>
+    </footer>
+</body>
+<script>
+    var menu = document.getElementById('menu')
+    var opciones = document.getElementById('opciones')
+    menu.onclick = function() {
+        if (opciones.style.display == 'block') {
+            opciones.style.display = 'none'
+        } else {
+            opciones.style.display = 'block'
+        }
+    }
+    var recorrido = document.getElementById('recorrido')
+    var opt_recorriodo = document.getElementById('opt_recorrido')
+    recorrido.onclick = function(){
+        if (opt_recorriodo.style.display == 'block') {
+            opt_recorriodo.style.display = 'none'
+        } else {
+            opt_recorriodo.style.display = 'block'
+        }
+    }
+</script>
+</html>
